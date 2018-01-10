@@ -1,0 +1,15 @@
+.app_demo-dark__1MDfj {
+  background-color: #1d1d1d;
+  color: var(--mdc-theme-text-primary-on-dark, #fff); }
+
+.app_demo-component__2Xrc6 {
+  margin: 1rem;
+  display: inline-block; }
+  .app_demo-component__2Xrc6.app_demo-component--block__1pXhx {
+    display: block; }
+  .app_demo-component__2Xrc6 figcaption {
+    margin-top: 1rem; }
+
+.app_demo-options__2fNf1 {
+  margin: 1rem;
+  width: 16rem; }

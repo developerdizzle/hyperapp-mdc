@@ -1,0 +1,22 @@
+.demo-dark {
+  background-color: #1d1d1d;
+  color: var(--mdc-theme-text-primary-on-dark,#fff);
+}
+
+.demo-component {
+  margin: 1rem;
+  display: inline-block;
+
+  &.demo-component--block {
+    display: block;
+  }
+
+  figcaption {
+    margin-top: 1rem;
+  }
+}
+
+.demo-options {
+  margin: 1rem;
+  width: 16rem;
+}
