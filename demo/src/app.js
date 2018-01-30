@@ -8,6 +8,7 @@ import {
   FloatingActionButton,
   Button,
   Checkbox,
+  Radio,
   Switch,
   TabBar,
   Tab,
@@ -18,6 +19,7 @@ import {
 
 const ButtonWithRipple = withRipple(Button);
 const FloatingActionButtonWithRipple = withRipple(FloatingActionButton);
+const SwitchWithRipple
 
 const state = {
   theme: {},
@@ -252,6 +254,28 @@ const view = (state, actions) => {
             return (
               <Option
                 component="switch"
+                attribute={attribute}
+                state={state}
+                toggleAttribute={actions.toggleAttribute}
+                />
+            );
+          })}
+        </ul>
+      </section>
+      <section>
+        <h1 class="mdc-typography--headline">Radio</h1>
+        <span class={style["demo-component"]}>
+          <Checkbox
+            {...state.checkbox}
+            onchange={actions.onCheckboxChange}
+            value="checkbox"
+            />
+        </span>
+        <ul class={`${style["demo-options"]} mdc-list`}>
+          {['checked', 'disabled'].map(attribute => {
+            return (
+              <Option
+                component="checkbox"
                 attribute={attribute}
                 state={state}
                 toggleAttribute={actions.toggleAttribute}
