@@ -19,7 +19,6 @@ import {
 
 const ButtonWithRipple = withRipple(Button);
 const FloatingActionButtonWithRipple = withRipple(FloatingActionButton);
-const SwitchWithRipple
 
 const state = {
   theme: {},
@@ -103,13 +102,13 @@ const view = (state, actions) => {
           <FloatingActionButton class="material-icons" {...state.floatingActionButton}>
             star
           </FloatingActionButton>
-          <figcaption>CSS-only</figcaption>
+          <figcaption>FAB</figcaption>
         </figure>
         <figure class={style["demo-component"]}>
           <FloatingActionButtonWithRipple class="material-icons" {...state.floatingActionButton}>
             star
           </FloatingActionButtonWithRipple>
-          <figcaption>with ripple</figcaption>
+          <figcaption>FAB with ripple</figcaption>
         </figure>
         <ul class={`${style["demo-options"]} mdc-list`}>
           {['mini'].map(attribute => {
@@ -130,27 +129,27 @@ const view = (state, actions) => {
           <Button {...state.button}>
             Button
           </Button>
-          <figcaption>CSS-only</figcaption>
+          <figcaption>Button</figcaption>
         </figure>
         <figure class={style["demo-component"]}>
           <Button {...state.button}>
             <i class="material-icons mdc-button__icon">favorite</i>
             Button
           </Button>
-          <figcaption>CSS-only with icon</figcaption>
+          <figcaption>Button with icon</figcaption>
         </figure>
         <figure class={style["demo-component"]}>
           <ButtonWithRipple {...state.button}>
             Button
           </ButtonWithRipple>
-          <figcaption>with ripple</figcaption>
+          <figcaption>Button with ripple</figcaption>
         </figure>
         <figure class={style["demo-component"]}>
           <ButtonWithRipple {...state.button}>
             <i class="material-icons mdc-button__icon">favorite</i>
             Button
           </ButtonWithRipple>
-          <figcaption>with ripple; with icon</figcaption>
+          <figcaption>Button with ripple and icon</figcaption>
         </figure>
         <ul class={`${style["demo-options"]} mdc-list`}>
           {['raised', 'unelevated', 'stroked', 'dense', 'compact', 'disabled'].map(attribute => {
@@ -220,13 +219,14 @@ const view = (state, actions) => {
       </section>
       <section>
         <h1 class="mdc-typography--headline">Checkbox</h1>
-        <span class={style["demo-component"]}>
+        <figure class={style["demo-component"]}>
           <Checkbox
             {...state.checkbox}
             onchange={actions.onCheckboxChange}
             value="checkbox"
             />
-        </span>
+          <figcaption>Checkbox</figcaption>
+        </figure>
         <ul class={`${style["demo-options"]} mdc-list`}>
           {['checked', 'disabled'].map(attribute => {
             return (
@@ -242,13 +242,14 @@ const view = (state, actions) => {
       </section>
       <section>
         <h1 class="mdc-typography--headline">Switch</h1>
-        <span class={style["demo-component"]}>
+        <figure class={style["demo-component"]}>
           <Switch
             {...state.switch}
             onchange={actions.onSwitchChange}
             value="switch"
             />
-        </span>
+          <figcaption>Switch</figcaption>
+        </figure>
         <ul class={`${style["demo-options"]} mdc-list`}>
           {['checked', 'disabled'].map(attribute => {
             return (

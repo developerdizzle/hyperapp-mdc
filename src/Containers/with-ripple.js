@@ -23,11 +23,11 @@ const withRipple = (InnerComponent) => (props, children) => {
     ...props,
     class: classes,
     oncreate: (element) => {
-      typeof props.oncreate === 'function' && props.oncreate(element);
+      props.oncreate && props.oncreate(element);
       oncreate(element);
     },
     ondestroy: (element) => {
-      typeof props.ondestroy === 'function' && props.ondestroy(element);
+      props.ondestroy && props.ondestroy(element);
       ondestroy(element);
     },
   }, children);
